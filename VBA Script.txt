@@ -43,10 +43,10 @@ Dim Summary_Table_Row As Integer
 Summary_Table_Row = 2
   
   Dim Lastrow As Long
-  Dim i As Integer
+  Dim i As Long
   
   Lastrow = ws.Cells(Rows.Count, 1).End(xlUp).Row
-  For i = 2 To Lastrow
+     For i = 2 To Lastrow
 
 
     If ws.Cells(i + 1, 1).Value <> ws.Cells(i, 1).Value Then
@@ -106,7 +106,6 @@ ws.Range("Q5").Value = greatest_total_volume
 
 ws.Range("Q3").NumberFormat = "0.00%"
 ws.Range("Q4").NumberFormat = "0.00%"
-
 
       For i = 2 To Lastrow
       
